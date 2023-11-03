@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/icon1.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <title>Contact Us | WOH Montalban</title>
+<style>
+.container {
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+@keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="logo">
+            <img src="images/Logo.webp" alt="WOH Logo">
+          </div>
+          <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mission.html">Mission</a></li>
+            <li><a href="goal.html">Goals</a></li>
+            <li class="dropdown">
+              <a href="" style="display: inline-block;">
+                <span class="dropdown-nav">More</span>
+                <span id="dropdown-icon" class="material-icons">
+                    arrow_drop_down
+                </span>
+              </a>
+              
+              <div class="dropdown-content">
+                <a href="pastors.html" class="register-link">Pastors</a>
+                <a href="" class="register-link active">Contact</a>
+                <a href="abouts.html" class="register-link">About</a>
+              </div>
+            </li>
+            <li><a href="" class="mini active">Contact</a></li>
+            <li><a href="abouts.html" class="mini">About</a></li>
+          </ul>
+          <div class="menu-toggle" onclick="toggleMenu()" id="menuToggle"><span class="third-line" id ="thirdLine"></span><div>
+          
+        </nav>
+    </header>
+    <div class="spacer"></div>
+    <div class="HeadTitle">Contact Us</div>
+    <div class="container">
+        <div class="contact-info">
+            <img src="images/fbpage.png" alt="Your Photo">
+            <p class="text">Facebook Page: <a href="https://www.facebook.com/profile.php?id=61552950299166" target="_blank">Visit our Facebook Page</a></p>
+            <p class="text">Email: <a href="mailto:wordofhoperodriguez@gmail.com">wordofhoperodriguez@gmail.com</a></p>
+            <p class="text">Contact Number: +63 976 211 8770</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 WOH - MONTALBAN</p>
+    </footer>
+</body>
+</html>

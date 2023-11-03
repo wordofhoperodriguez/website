@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Missions | WOH Montalban</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/icon1.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        .list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 10px;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+
+        .list-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: opacity 0.5s;
+            position: relative;
+        }
+
+        .main-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #000000;
+            margin-left: 10vh;
+            margin-right: 10vh;
+        }
+
+        .sub-text {
+            font-size: 18px;
+            color: #363333;
+            margin-top: 10px;
+            margin-left: 10vh;
+            margin-right: 10vh;
+        }
+
+        .list-item {
+            animation: fadeIn 1.5s;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .main-text {
+                font-size: 14px;
+                color: #000000;
+                margin-left: 0;
+                margin-right: 0;
+
+            }
+
+            .sub-text {
+                font-size: 12px;
+                color: #777;
+                margin-top: 10px;
+                margin-left: 0;
+                margin-right: 0;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="logo">
+            <img src="images/Logo.webp" alt="WOH Logo">
+          </div>
+          <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href=""  class="active">Mission</a></li>
+            <li><a href="goal.html">Goals</a></li>
+            <li class="dropdown">
+              <a href="" style="display: inline-block;">
+                <span class="dropdown-nav">More</span>
+                <span id="dropdown-icon" class="material-icons">
+                    arrow_drop_down
+                </span>
+              </a>
+              
+              <div class="dropdown-content">
+                <a href="pastors.html" class="register-link">Pastors</a>
+                <a href="contact.html" class="register-link">Contact</a>
+                <a href="abouts.html" class="register-link">About</a>
+              </div>
+            </li>
+            <li><a href="contact.html" class="mini">Contact</a></li>
+            <li><a href="abouts.html" class="mini">About</a></li>
+          </ul>
+          <div class="menu-toggle" onclick="toggleMenu()" id="menuToggle"><span class="third-line" id ="thirdLine"></span><div>
+          
+        </nav>
+    </header>
+    <div class="spacer"></div>
+    <div class="HeadTitle">MISSION</div>
+    <div class="list">
+        <div class="list-column">
+            <div class="list-item">
+                <div class="text">
+                <div class="main-text">MISSION AND VISION</div>
+                <div class="sub-text">"To spread the Good News of Salvation and the truths of the Bible, and bring lost souls to the Lord Jesus Christ --- the Giver of Hope."
+                </div>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="text">
+                <div class="main-text">OUR MISSION STATEMENT</div>
+                <div class="sub-text">Our church was established to give honor and glory to God; to make disciples of the Lord Jesus Christ; to build up men and women for the ministry and the proclamation of the full gospel message in the power of the Holy Spirit.
+                </div>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="text">
+                <div class="main-text">OUR PURPOSE: TO GIVE GLORY TO GOD</div>
+                <div class="sub-text">Isaiah 43:7 tells us that God created us for His glory. Therefore in all that we are and in all that we do, we must individually and corporately bring glory to our Creator (Eph. 1:5-6).</div>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="text">
+                <div class="main-text">OUR GOAL</div>
+                <div class="sub-text">
+                    TO MAKE DISCIPLES OF THE LORD JESUS CHRIST A disciple is one who lives as His master lives. For us it is a learner - a follower of the Lord Jesus Christ, one who is not just a hearer but a doer of His word.
+                    <br><br>
+                    Before Jesus was taken up into heaven His parting words to His disciples were "Therefore go and MAKE DISCIPLES of all nations..." Such is our mission. We will not stop at touching and reaching people but rather we aim to make disciples who will then disciple others. We will not stop at reaching our city but from here we will actively participate in the universal effort to spread His kingdom to the whole world. By nations, we do not just mean geographical or political groupings but to distinct people groups that are yet unreached.
+                    <br><br>
+                    ONE MESSAGE: THE FULL GOSPEL OF HIS KINGDOM The only way we can achieve our goal is through the life-changing power of the Gospel of our Lord Jesus. "For the message of the Cross is foolishness to those who are perishing, but to us who are being saved, it is the power of God" (1 Cor. 1:18). The word Full Gospel implies a holistic view of salvation. It means that we are not just delivered from the penalty of sin but that we can also enjoy the benefits of Christ's work (healing, abundant life and deliverance) at the present time.
+                    <br><br>
+                    OUR METHOD: DECLARATION AND DEMONSTRATION IN THE POWER OF THE HOLY SPIRIT "My message and my preaching were not with wise and persuasive words but with the demonstration of the Spirit's power so that your faith may not rest on men's wisdom but on God's power," Paul says in 1 Cor. 2:4-5.
+                    <br><br>
+                    Empty words will not win the world, neither will it make disciples. Jesus Himself said, " Unless your people see miraculous signs and wonders, you will never believe (John 4:48) but He also said, " I tell you the truth, anyone who has faith in Me will do what I have been doing. He will do even greater things than these because I am going to the Father". (John 14:12)
+                    <br><br>
+                    Jesus accomplished the task He began for us by living His life before men. Paul exhorts us in 1 Cor. 13:1-3, "If I speak in the tongues of men and of angels but have not love, I am only a resounding gong or a clanging cymbal. If I have gift of prophecy and can fathom all mysteries and all knowledge, and if I have faith that can move mountains, and have not love, I am nothing. If I give all I possess to the poor and surrender my body to the flames but have not love I gain nothing.
+                </div>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="text">
+                <div class="main-text">Source:</div>
+                <a href="https://www.wordofhope.ph/copy-3-of-about-us">
+                <div class="sub-text">&copy; Word of Hope : A Christian Family Church</div></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="spacer"></div>
+    <footer>
+        <p>&copy; 2023 WOH - MONTALBAN</p>
+    </footer>
+</body>
+</html>

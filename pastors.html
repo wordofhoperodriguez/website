@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid 2px #000;
+}
+
+.profile-photo {
+    width: 50%;
+    text-align: center;
+}
+
+
+.profile-photo #dp-left {
+    width: 180px;
+    height: 180px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    margin-left: 40%;
+    animation: fadeIn 1.5s;
+}
+
+.profile-photo #dp-right {
+    width: 180px;
+    height: 180px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    margin-left: -130%;
+    animation: fadeIn 1.5s;
+}
+
+.profile-data-left {
+    width: 50%;
+    padding: 20px;
+    text-align: left;
+    animation: fadeIn 1.5s;
+}
+
+.profile-data-right {
+    width: 50%;
+    padding: 20px;
+    text-align: left;
+    margin-left: 25%;
+    animation: fadeIn 1.5s;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+@keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+@media (max-width: 768px) {
+        .profile-photo #dp-left {
+            width: 160px;
+            height: 160px;
+            margin-left: 0;
+        }
+
+        .profile-photo #dp-right {
+            width: 160px;
+            height: 160px;
+            margin-left: 0;
+        }
+
+        .profile-data-left {
+            width: 50%;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .profile-data-right {
+            width: 50%;
+            padding: 20px;
+            text-align: left;
+            margin-left: 0;
+        }
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icon1.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <title>Pastors | WOH Montalban</title>
+</head>
+<body>
+<header>
+    <nav>
+      <div class="logo">
+        <img src="images/Logo.webp" alt="WOH Logo">
+      </div>
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mission.html" >Mission</a></li>
+        <li><a href="goal.html">Goals</a></li>
+        <li class="dropdown">
+          <a href="" style="display: inline-block;" class="active">
+            <span class="dropdown-nav">More</span>
+            <span id="dropdown-icon" class="material-icons">
+                arrow_drop_down
+            </span>
+          </a>
+          
+          <div class="dropdown-content">
+            <a href="" class="register-link active">Pastors</a>
+            <a href="contact.html" class="register-link">Contact</a>
+            <a href="abouts.html" class="register-link">About</a>
+          </div>
+        </li>
+        <li><a href="contact.html" class="mini">Contact</a></li>
+        <li><a href="abouts.html" class="mini">About</a></li>
+      </ul>
+      <div class="menu-toggle" onclick="toggleMenu()" id="menuToggle"><span class="third-line" id ="thirdLine"></span><div>
+      
+    </nav>
+</header>
+<div class="spacer"></div>
+<div class="HeadTitle">PASTORS</div>
+    <div class="profile">
+        <div class="profile-photo">
+            <img src="images/pstr_mike.jpg" alt="Profile Photo 1" id="dp-left">
+        </div>
+        <div class="profile-data-left">
+            <h1>Pastor Michael Eugenio</h1>
+            <p>Position: PIC</p>
+            <p>Email: sample@example.com</p>
+            <p>Contact: 090909099</p>
+            <p>Location: Rodriguez, Rizal</p>
+        </div>
+    </div>
+    <div class="profile">
+        <div class="profile-data-right">
+            <h1>Pastora Luzi Cam</h1>
+            <p>Position: Pastor</p>
+            <p>Email: sample@example.com</p>
+            <p>Contact: 090909099</p>
+            <p>Location: Rodriguez, Rizal</p>
+        </div>
+        <div class="profile-photo">
+            <img src="images/pstra_luz.jpg" alt="Profile Photo 2" id="dp-right">
+        </div>
+    </div>
+    <div class="profile">
+        <div class="profile-photo">
+            <img src="images/pstra_bhabes.jpg" alt="Profile Photo 3" id="dp-left">
+        </div>
+        <div class="profile-data-left">
+            <h1>Pastora Franzilla Bundang</h1>
+            <p>Position: Pastor</p>
+            <p>Email: sample@example.com</p>
+            <p>Contact: 090909099</p>
+            <p>Location: Rodriguez, Rizal</p>
+        </div>
+    </div>
+    <div class="spacer"></div>
+    <footer>
+        <p>&copy; 2023 WOH - MONTALBAN</p>
+    </footer>
+</body>
+</html>

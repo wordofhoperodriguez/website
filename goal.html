@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Goals | WOH Montalban</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/icon1.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        .list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 10px;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+
+        .list-item {
+            flex-basis: calc(50% - 10px);
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: opacity 0.5s;
+            position: relative;
+        }
+
+        .number {
+            font-size: 24px;
+            margin-right: 10px;
+            color: rgb(0, 217, 255);
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .main-text {
+            font-size: 18px;
+            color: #000000;
+            margin-left: 30px;
+        }
+
+        .sub-text {
+            font-size: 14px;
+            color: #777;
+            margin-top: 10px;
+            margin-left: 40px;
+        }
+
+        .list-item {
+            animation: fadeIn 1.5s;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .list-column {
+            flex: 0 0 100%;
+        }
+        #lc2 {
+            margin-top: -10px;
+        }
+        
+        @media (min-width: 768px) {
+            .list-column {
+                flex: 0 0 calc(50% - 10px);
+            }
+            #lc2 {
+            margin-top: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .main-text {
+            font-size: 14px;
+            color: #000000;
+            }
+
+            .sub-text {
+                font-size: 12px;
+                color: #777;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="logo">
+            <img src="images/Logo.webp" alt="WOH Logo">
+          </div>
+          <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mission.html">Mission</a></li>
+            <li><a href="goal.html" class="active">Goals</a></li>
+            <li class="dropdown">
+              <a href="" style="display: inline-block;">
+                <span class="dropdown-nav">More</span>
+                <span id="dropdown-icon" class="material-icons">
+                    arrow_drop_down
+                </span>
+              </a>
+              
+              <div class="dropdown-content">
+                <a href="pastors.html" class="register-link">Pastors</a>
+                <a href="contact.html" class="register-link">Contact</a>
+                <a href="abouts.html" class="register-link">About</a>
+              </div>
+            </li>
+            <li><a href="contact.html" class="mini">Contact</a></li>
+            <li><a href="abouts.html" class="mini">About</a></li>
+          </ul>
+          <div class="menu-toggle" onclick="toggleMenu()" id="menuToggle"><span class="third-line" id ="thirdLine"></span><div>
+          
+        </nav>
+    </header>
+    <div class="spacer"></div>
+    <div class="HeadTitle">2023 GOALS & VISION</div>
+    <div class="list">
+        <div class="list-column">
+            <div class="list-item">
+                <div class="number" id="num">1.</div>
+                <div class="text">
+                <div class="main-text">FOR 2023: WIN 125,000 Souls - Decision for Christ's Salvation and PLANT 50 New Churches (10 in NCR/Metro Manila, 40 Other  Cities, Towns, Islands, and Abroad.)
+                    LONG-TERM VISION: To help fulfill the Great Commission together with Global Church Network by the 2,000th Birthday of the Church on Pentecost Sunday, June 9, 2030.
+                </div>
+                <div class="sub-text"> - 1 Million Souls Saved (125K per year) </div>
+                <div class="sub-text"> - 400 New Churches </div>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="number" id="num">2.</div>
+                <div class="text">
+                <div class="main-text"> Encourage & Motivate Word of Hope members to be “Fervent in Spirit, Serving the Lord” through their Participation in Prayers and involvement in Missions & Ministries.
+                </div>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="number" id="num">3.</div>
+                <div class="text">
+                <div class="main-text"> Revive Word of Hope Life Groups and open 1,000 New Life Groups in homes, condominiums, Government & Business Offices, Factories, School Campuses, etc.
+                </div>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="number" id="num">4.</div>
+                <div class="text">
+                <div class="main-text"> Strengthen & Mobilize All Existing Ministries and Create new ones for Greater Impact resulting in Greater Growth spiritually and numerically in the Church.
+                </div>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="number" id="num">5.</div>
+                <div class="text">
+                <div class="main-text"> Recruit, Develop, and Train New Emerging Leaders for Pastoral Ministry, Missions, and Evangelism.
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="list-column" id="lc2">
+            <div class="list-item">
+                <div class="number" id="num">6.</div>
+                <div class="text">
+                <div class="main-text"> Expansion of Word of Hope Media Ministry through Radio, TV, Online Livestream, and other Social Media platforms.
+                </div>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="number" id="num">7.</div>
+                <div class="text">
+                <div class="main-text"> The Launching of MV Good News with complete equipment for Island Evangelism, Missions, and Church Planting.
+                </div>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="number" id="num">8.</div>
+                <div class="text">
+                <div class="main-text"> The Construction of Word of Hope Prayer Tower. Also Upgrading & Improvements of FAITH & GRACE Auditoriums.
+                </div>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="number" id="num">9. </div>
+                <div class="text">
+                <div class="main-text"> Expansion of Word of Hope Dome Gymnasium and more improvements in Paradise Prayer Garden.
+                </div>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="number" id="num">10.</div>
+                <div class="text">
+                <div class="main-text"> Re-Opening of Hope Christian Academy for 2023-2024 School Years. Promotion of Hope Leadership College and Hope Island Bible School for both Urban and Island Pastoral Training.
+                </div>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="text">
+                <div class="main-text">Source:</div>
+                <a href="https://www.wordofhope.ph/copy-3-of-about-us">
+                <div class="sub-text">&copy; Word of Hope : A Christian Family Church</div></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="spacer"></div>
+    <footer>
+        <p>&copy; 2023 WOH - MONTALBAN</p>
+    </footer>
+</body>
+</html>
