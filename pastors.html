@@ -1,95 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-.profile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-    padding-bottom: 20px;
-    border-bottom: solid 2px #000;
-}
-
-.profile-photo {
-    width: 50%;
-    text-align: center;
-}
-
-
-.profile-photo #dp-left {
-    width: 180px;
-    height: 180px;
-    border: 2px solid #333;
-    border-radius: 50%;
-    margin-left: 40%;
-    animation: fadeIn 1.5s;
-}
-
-.profile-photo #dp-right {
-    width: 180px;
-    height: 180px;
-    border: 2px solid #333;
-    border-radius: 50%;
-    margin-left: -130%;
-    animation: fadeIn 1.5s;
-}
-
-.profile-data-left {
-    width: 50%;
-    padding: 20px;
-    text-align: left;
-    animation: fadeIn 1.5s;
-}
-
-.profile-data-right {
-    width: 50%;
-    padding: 20px;
-    text-align: left;
-    margin-left: 25%;
-    animation: fadeIn 1.5s;
-}
-
-h1 {
-    font-size: 28px;
-}
-
-@keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-
-@media (max-width: 768px) {
-        .profile-photo #dp-left {
-            width: 160px;
-            height: 160px;
-            margin-left: 0;
-        }
-
-        .profile-photo #dp-right {
-            width: 160px;
-            height: 160px;
-            margin-left: 0;
-        }
-
-        .profile-data-left {
-            width: 50%;
-            padding: 20px;
-            text-align: left;
-        }
-
-        .profile-data-right {
-            width: 50%;
-            padding: 20px;
-            text-align: left;
-            margin-left: 0;
-        }
-    }
-</style>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -98,6 +8,102 @@ h1 {
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="script.js"></script>
     <title>Pastors | WOH Montalban</title>
+    <style>
+        .profile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            padding-bottom: 20px;
+            border-bottom: solid 2px #000;
+        }
+        
+        .profile-photo {
+            width: 50%;
+            text-align: center;
+        }
+        
+        
+        .profile-photo #dp-left {
+            width: 180px;
+            height: 180px;
+            border: 2px solid #333;
+            border-radius: 50%;
+            margin-left: 40%;
+            animation: fadeIn 1.5s;
+        }
+        
+        .profile-photo #dp-right {
+            width: 180px;
+            height: 180px;
+            border: 2px solid #333;
+            border-radius: 50%;
+            margin-left: -130%;
+            animation: fadeIn 1.5s;
+        }
+        
+        .profile-data-left {
+            width: 50%;
+            padding: 20px;
+            text-align: left;
+            animation: fadeIn 1.5s;
+        }
+        
+        .profile-data-right {
+            width: 50%;
+            padding: 20px;
+            text-align: left;
+            margin-left: 25%;
+            animation: fadeIn 1.5s;
+        }
+        
+        h1 {
+            font-size: 28px;
+        }
+        
+        @keyframes fadeIn {
+                    0% {
+                        opacity: 0;
+                    }
+                    100% {
+                        opacity: 1;
+                    }
+                }
+        
+        @media (max-width: 768px) {
+                .profile {
+                    flex-direction: column;
+                }
+                .profile-photo #dp-left {
+                    width: 160px;
+                    height: 160px;
+                    margin-left: 0;
+                }
+        
+                .profile-photo #dp-right {
+                    position: absolute;
+                    width: 160px;
+                    height: 160px;
+                    margin-left: -80px;
+                    margin-top: -300px;
+                }
+        
+                .profile-data-left {
+                    width: 100%;
+                    padding: 20px;
+                    text-align: left;
+                    margin-left: 0;
+                }
+        
+                .profile-data-right {
+                    width: 100%;
+                    padding: 20px;
+                    text-align: left;
+                    margin-left: 0;
+                    padding-top: 200px;
+                }
+            }
+        </style>
 </head>
 <body>
 <header>
@@ -106,7 +112,7 @@ h1 {
         <img src="images/Logo.webp" alt="WOH Logo">
       </div>
       <ul class="navbar">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="homepage.html">Home</a></li>
         <li><a href="mission.html" >Mission</a></li>
         <li><a href="goal.html">Goals</a></li>
         <li class="dropdown">
