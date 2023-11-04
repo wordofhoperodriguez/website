@@ -1,60 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>WOH Montalban</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="images/icon1.png" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loader.css">
+    <title>Website Loader</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000;
+        }
+
+        .loader {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 48px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .w, .o, .h {
+            animation: bounce 1s infinite alternate, colorChange 3s infinite;
+            transform-origin: center;
+            display: inline-block;
+        }
+
+        .w {
+            animation-delay: 0.1s;
+        }
+
+        .o {
+            animation-delay: 0.2s;
+        }
+
+        .h {
+            animation-delay: 0.3s;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes colorChange {
+            0%, 100% {
+                color: #fff;
+                text-shadow: 0 0 10px gold, 0 0 15px goldenrod;
+            }
+            50% {
+                color: gold;
+                text-shadow: 0 0 10px goldenrod, 0 0 15px gold;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">
-        <img src="images/Logo.webp" alt="WOH Logo">
-      </div>
-      <ul class="navbar">
-        <li><a href="" class="active">Home</a></li>
-        <li><a href="mission.html">Mission</a></li>
-        <li><a href="goal.html">Goals</a></li>
-        <li class="dropdown">
-          <a href="" style="display: inline-block;">
-            <span class="dropdown-nav">More</span>
-            <span id="dropdown-icon" class="material-icons">
-                arrow_drop_down
-            </span>
-          </a>
-          
-          <div class="dropdown-content">
-            <a href="pastors.html" class="register-link">Pastors</a>
-            <a href="contact.html" class="register-link">Contact</a>
-            <a href="abouts.html" class="register-link">About</a>
-          </div>
-        </li>
-        <li><a href="contact.html" class="mini">Contact</a></li>
-        <li><a href="abouts.html" class="mini">About</a></li>
-      </ul>
-      <div class="menu-toggle" onclick="toggleMenu()" id="menuToggle"><span class="third-line" id ="thirdLine"></span><div>
-      
-    </nav>
-  </header>
-  <div class="spacer"></div>
-  <div class="container3">
-    <div class="text">
-        <h1>“Again I say to you that if two of you agree on earth concerning anything that they ask, it will be done for them by My Father in heaven."</h1>
-        <p>Matthew 18:19</p>
-        <a href="abouts.html"><button>Learn More</button></a>
+    <div class="loader">
+        <div class="w">W</div>
+        <div class="o">O</div>
+        <div class="h">H</div>
     </div>
-    <div class="slider">
-        <div style="text-align: center;">
-          <iframe src="images/tryvid.mp4" title="Soft Opening - WOH Montalban" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen autoplay loop></iframe>
-        </div>
-    </div>
-  </div>
-  
-  <footer>
-    <p>&copy; 2023 WOH - MONTALBAN</p>
-  </footer>
+    <script>
+        function redirectToHomepage() {
+            window.location.href = 'homepage.html';
+        }
+
+        if (navigator.connection) {
+            var connectionType = navigator.connection.effectiveType;
+            var delay = 5000;
+
+            if (connectionType === '4g') {
+                delay = 2000;
+            } else if (connectionType === '3g') {
+                delay = 4000;
+            }
+            setTimeout(redirectToHomepage, delay);
+        } else {
+            setTimeout(redirectToHomepage, delay);
+        }
+    </script> 
 </body>
 </html>
