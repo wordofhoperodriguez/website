@@ -79,7 +79,12 @@
                 }
         
         @media (max-width: 768px) {
-                .profile, .mid-profile {
+                .profile {
+                    flex-direction: column;
+                }
+
+                .mid-profile {
+                    flex-direction: none;
                     flex-direction: column;
                 }
             
@@ -93,6 +98,7 @@
                     position: absolute;
                     width: 160px;
                     height: 160px;
+                    margin-left: 0;
                 }
         
                 .profile-data-left {
